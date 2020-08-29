@@ -20,7 +20,7 @@ class App extends React.Component {
 
   handleDeleteNote = (noteId) => {
     console.log(noteId)
-    fetch(`${config.API_ENDPOINT}/notes/${noteId}`, {
+    fetch(`${config.API_ENDPOINT}notes/${noteId}`, {
       method: 'DELETE',
       headers: {
         'Authorization': 'Bearer 910237e9-95fd-4ecf-b17b-4af6605a1f01',
